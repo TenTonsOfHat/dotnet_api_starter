@@ -1,7 +1,7 @@
 ﻿using Serilog;
 using Serilog.Sinks.SystemConsole.Themes;
 
-namespace dotnet_api_starter.Logging.Registrations;
+namespace api.Logging.Registrations;
 
 public class ConsoleLogRegistration : ILogRegistration
 {

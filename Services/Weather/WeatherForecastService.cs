@@ -1,6 +1,7 @@
-﻿using dotnet_api_starter.Services.Abstraction;
+﻿using Microsoft.Extensions.Logging;
+using Services.Abstraction;
 
-namespace dotnet_api_starter.Services.Weather;
+namespace Services.Weather;
 
 public class WeatherForecastService(
     ILogger<WeatherForecastService> logger
@@ -11,11 +12,10 @@ public class WeatherForecastService(
         "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
     };
 
-    private readonly ILogger<WeatherForecastService> _logger = logger;
 
     public IEnumerable<WeatherForecast> GetWeatherForecast()
     {
-        _logger.LogInformation("Getting weather forecast");
+        logger.LogInformation("Getting weather forecast");
         return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
                 Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),

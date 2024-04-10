@@ -1,4 +1,4 @@
-﻿namespace dotnet_api_starter.Services.Abstraction;
+﻿namespace Services.Abstraction;
 
 
 /// <summary>

@@ -1,6 +1,6 @@
-using dotnet_api_starter.Logging;
-using dotnet_api_starter.Services.Abstraction;
+using api.Logging;
 using Serilog;
+using Services.Abstraction;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.SetLogging();

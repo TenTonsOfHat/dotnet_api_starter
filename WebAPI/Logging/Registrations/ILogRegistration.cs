@@ -1,6 +1,6 @@
 ﻿using Serilog;
 
-namespace dotnet_api_starter.Logging.Registrations;
+namespace api.Logging.Registrations;
 
 public interface ILogRegistration
 {

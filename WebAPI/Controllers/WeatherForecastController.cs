@@ -1,7 +1,7 @@
-using dotnet_api_starter.Services.Weather;
 using Microsoft.AspNetCore.Mvc;
+using Services.Weather;
 
-namespace dotnet_api_starter.Controllers;
+namespace api.Controllers;
 
 [ApiController]
 [Route("[controller]")]

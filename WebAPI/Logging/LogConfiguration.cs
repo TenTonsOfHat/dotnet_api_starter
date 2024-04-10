@@ -1,9 +1,9 @@
 ﻿using System.Text.RegularExpressions;
-using dotnet_api_starter.Logging.Registrations;
+using api.Logging.Registrations;
 using Serilog;
 using Serilog.Events;
 
-namespace dotnet_api_starter.Logging;
+namespace api.Logging;
 
 public static class LogConfiguration
 {
