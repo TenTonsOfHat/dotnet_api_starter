@@ -1,0 +1,21 @@
+﻿{
+  "openApiPath": "./openapi.json",
+  "returnIApiResponse": true,
+  "namespace": "Services.Refit",
+  "naming": {
+    "useOpenApiTitle": false,
+    "interfaceName": "MyApiClient"
+  },
+  "responseTypeOverride": { 
+    "File_Upload": "IApiResponse",
+    "File_Download": "System.Net.Http.HttpContent"
+  },
+  "multipleInterfaces": "ByTag",
+  "outputFolder": "./Client",
+  "dependencyInjectionSettings": { 
+    "baseUrl": "",
+    "usePolly": true,
+    "pollyMaxRetryCount": 3, 
+    "firstBackoffRetryInSeconds": 0.5 
+  }
+}

@@ -21,7 +21,7 @@ public static class LogConfiguration
         InitializeLogger(builder.Configuration);
         return builder;
     }
-    
+
     public static CoconaAppBuilder SetLogging(this CoconaAppBuilder builder)
     {
         builder.Host.UseSerilog();

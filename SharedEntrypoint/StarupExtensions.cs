@@ -1,10 +1,19 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Services.Abstraction;
+using Services.Refit;
 
 namespace SharedEntrypoint;
 
 public static class StartupExtensions
 {
+    public static IServiceCollection RegisterAll(this IServiceCollection services)
+    {
+        return services.RegisterScopedServices()
+            .RegisterTransientServices()
+            .ConfigureRefitClients(new Uri("https://petstore3.swagger.io/api/v3"));
+    }
+
+
     public static IServiceCollection RegisterTransientServices(this IServiceCollection services)
     {
         return services.Scan(scan => scan
