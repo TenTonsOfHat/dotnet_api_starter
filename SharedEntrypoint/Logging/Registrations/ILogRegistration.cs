@@ -1,6 +1,7 @@
-﻿using Serilog;
+﻿using Microsoft.Extensions.Configuration;
+using Serilog;
 
-namespace api.Logging.Registrations;
+namespace SharedEntrypoint.Logging.Registrations;
 
 public interface ILogRegistration
 {

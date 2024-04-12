@@ -1,3 +1,21 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-Console.WriteLine("Hello, World!");
+using Cocona;
+using Microsoft.Extensions.Logging;
+using Services.Weather;
+using SharedEntrypoint;
+using SharedEntrypoint.Logging;
+
+var builder = CoconaApp.CreateBuilder(args);
+builder.SetLogging();
+builder.Services.RegisterScopedServices().RegisterTransientServices();
+
+var app = builder.Build();
+
+app.AddCommand("weather", (IWeatherForecastService service, ILogger<Program> log) =>
+{
+    var weather = service.GetWeatherForecast();
+    log.LogInformation("The weather is {Summary}!", weather.First().Summary);
+});
+
+await app.RunAsync();

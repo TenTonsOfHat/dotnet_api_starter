@@ -21,18 +21,18 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Content Include="..\.dockerignore">
-        <Link>.dockerignore</Link>
-      </Content>
+        <Content Include="..\.dockerignore">
+            <Link>.dockerignore</Link>
+        </Content>
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Services\" />
+        <Folder Include="Services\"/>
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Services\Services.csproj" />
-      <ProjectReference Include="..\SharedEntrypoint\SharedEntrypoint.csproj" />
+        <ProjectReference Include="..\Services\Services.csproj"/>
+        <ProjectReference Include="..\SharedEntrypoint\SharedEntrypoint.csproj"/>
     </ItemGroup>
 
 </Project>

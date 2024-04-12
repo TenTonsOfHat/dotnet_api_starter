@@ -1,18 +1,20 @@
 ﻿using System.Text.RegularExpressions;
-using api.Logging.Registrations;
+using Cocona.Builder;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.Configuration;
 using Serilog;
 using Serilog.Events;
+using SharedEntrypoint.Logging.Registrations;
 
-namespace api.Logging;
+namespace SharedEntrypoint.Logging;
 
 public static class LogConfiguration
 {
-    
     public static ILogRegistration[] Registrations { get; } =
     {
         new ConsoleLogRegistration(),
     };
-    
+
     public static WebApplicationBuilder SetLogging(this WebApplicationBuilder builder)
     {
         builder.Host.UseSerilog();
@@ -20,6 +22,13 @@ public static class LogConfiguration
         return builder;
     }
     
+    public static CoconaAppBuilder SetLogging(this CoconaAppBuilder builder)
+    {
+        builder.Host.UseSerilog();
+        InitializeLogger(builder.Configuration);
+        return builder;
+    }
+
     public static void InitializeLogger(IConfiguration configuration)
     {
         Log.Logger = BuildLoggerConfiguration(configuration, Registrations).CreateLogger();
@@ -65,10 +74,11 @@ public static class LogConfiguration
             .Enrich.WithMachineName()
             .Enrich.WithEnvironmentUserName();
     }
-    
-    
+
+
     private static readonly Regex PathExclusionRegex = new(".*swagger\\.json|.*index\\.html", RegexOptions.Compiled);
     private static readonly string[] PropertiesToCheck = new[] { "Path", "RequestPath" };
+
     private static bool ShouldExcludeByProperty(LogEvent c)
     {
         foreach (var prop in PropertiesToCheck)
@@ -78,6 +88,7 @@ public static class LogConfiguration
                 return true;
             }
         }
+
         return false;
     }
 }
