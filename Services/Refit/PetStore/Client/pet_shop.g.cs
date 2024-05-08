@@ -8,10 +8,11 @@ using System.Collections.Generic;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
-namespace Services.Refit
+namespace Services.Refitter
 {
+    /// <summary>uploads an image</summary>
     [System.CodeDom.Compiler.GeneratedCode("Refitter", "0.9.9.0")]
-    public partial interface IMyApiClient
+    public partial interface IPetApi
     {
         /// <summary>uploads an image</summary>
         /// <param name="petId">ID of pet to update</param>
@@ -193,7 +194,12 @@ namespace Services.Refit
         /// </returns>
         [Delete("/pet/{petId}")]
         Task<IApiResponse> DeletePet(long petId, [Header("api_key")] string api_key);
+    }
 
+    /// <summary>Returns pet inventories by status</summary>
+    [System.CodeDom.Compiler.GeneratedCode("Refitter", "0.9.9.0")]
+    public partial interface IStoreApi
+    {
         /// <summary>Returns pet inventories by status</summary>
         /// <remarks>Returns a map of status codes to quantities</remarks>
         /// <returns>successful operation</returns>
@@ -272,7 +278,12 @@ namespace Services.Refit
         /// </returns>
         [Delete("/store/order/{orderId}")]
         Task<IApiResponse> DeleteOrder(long orderId);
+    }
 
+    /// <summary>Creates list of users with given input array</summary>
+    [System.CodeDom.Compiler.GeneratedCode("Refitter", "0.9.9.0")]
+    public partial interface IUserApi
+    {
         /// <summary>Creates list of users with given input array</summary>
         /// <param name="body">List of user object</param>
         /// <returns>A <see cref="Task"/> representing the <see cref="IApiResponse"/> instance containing the result.</returns>
@@ -392,9 +403,9 @@ namespace Services.Refit
         /// <returns>A <see cref="Task"/> representing the <see cref="IApiResponse"/> instance containing the result.</returns>
         [Post("/user")]
         Task<IApiResponse> CreateUser([Body] User body);
-
-
     }
+
+
 }
 
 
@@ -416,7 +427,7 @@ namespace Services.Refit
 #pragma warning disable 8604 // Disable "CS8604 Possible null reference argument for parameter"
 #pragma warning disable 8625 // Disable "CS8625 Cannot convert null literal to non-nullable reference type"
 
-namespace Services.Refit
+namespace Services.Refitter
 {
     using System = global::System;
 
@@ -644,7 +655,7 @@ namespace Services.Refit
 
 
 #nullable enable
-namespace Services.Refit
+namespace Services.Refitter
 {
     using System;
     using Microsoft.Extensions.DependencyInjection;
@@ -656,8 +667,8 @@ namespace Services.Refit
     {
         public static IServiceCollection ConfigureRefitClients(this IServiceCollection services, Uri baseUrl, Action<IHttpClientBuilder>? builder = default)
         {
-            var clientBuilderIMyApiClient = services
-                .AddRefitClient<IMyApiClient>()
+            var clientBuilderIPetApi = services
+                .AddRefitClient<IPetApi>()
                 .ConfigureHttpClient(c => c.BaseAddress = baseUrl)
                 .AddPolicyHandler(
                     HttpPolicyExtensions
@@ -666,7 +677,31 @@ namespace Services.Refit
                             Backoff.DecorrelatedJitterBackoffV2(
                                 TimeSpan.FromSeconds(0.5),
                                 3)));
-            builder?.Invoke(clientBuilderIMyApiClient);
+            builder?.Invoke(clientBuilderIPetApi);
+
+            var clientBuilderIStoreApi = services
+                .AddRefitClient<IStoreApi>()
+                .ConfigureHttpClient(c => c.BaseAddress = baseUrl)
+                .AddPolicyHandler(
+                    HttpPolicyExtensions
+                        .HandleTransientHttpError()
+                        .WaitAndRetryAsync(
+                            Backoff.DecorrelatedJitterBackoffV2(
+                                TimeSpan.FromSeconds(0.5),
+                                3)));
+            builder?.Invoke(clientBuilderIStoreApi);
+
+            var clientBuilderIUserApi = services
+                .AddRefitClient<IUserApi>()
+                .ConfigureHttpClient(c => c.BaseAddress = baseUrl)
+                .AddPolicyHandler(
+                    HttpPolicyExtensions
+                        .HandleTransientHttpError()
+                        .WaitAndRetryAsync(
+                            Backoff.DecorrelatedJitterBackoffV2(
+                                TimeSpan.FromSeconds(0.5),
+                                3)));
+            builder?.Invoke(clientBuilderIUserApi);
 
             return services;
         }

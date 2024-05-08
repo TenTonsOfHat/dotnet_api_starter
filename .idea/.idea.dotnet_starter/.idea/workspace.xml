@@ -10,51 +10,85 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ae722f3b-6b75-43f6-b4ef-c9dabf73a364" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.dotnet_starter/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.dotnet_starter/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.dotnet_starter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.dotnet_starter/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/Refit/PetShop/pet_store.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/Refit/PetStore/Client/pet_shop.g.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/Refit/PetStore/pet_shop.refitter" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/Refit/PetStore/pet_store.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CommandLine/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CommandLine/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Refit/.refitter.example" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Refit/.refitter.example" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Refit/PetShop/Client/pet_shop.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Refit/PetShop/Client/pet_shop.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Refit/PetShop/pet_shop.refitter" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Refit/PetShop/pet_shop.refitter" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Services.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Services.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SharedEntrypoint/StarupExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SharedEntrypoint/StarupExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPI/Controllers/PetAPIController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/Controllers/PetAPIController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPI/WebAPI.http" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/WebAPI.http" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ca34c435c21a881dec1b95b576a33446953dba3cb681e0eec9282a442134/IServiceTypeSelector.cs" root0="SKIP_HIGHLIGHTING" />
+  <component name="DpaMonitoringSettings">
+    <option name="autoShow" value="false" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JSON File" />
+      </list>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/aspnetcore/8486d31e24f30e3fa1809a95699a0adc16f448d7/src/DefaultBuilder/src/WebApplicationBuilder.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1979a3f5aab94ec39544920bceeb368c9800/17/dc5a1513/CoconaApp.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1979a3f5aab94ec39544920bceeb368c9800/3b/b980de8a/CoconaAppBuilder.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/837ffc1b8bab98ded4a9a5fd2b51e544a84c2a69158747bf777adefe994bf78e/ApiResponse.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Services/Refit/PetShop/Client/pet_shop.g.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 7
 }</component>
   <component name="ProjectId" id="2dgNg3ILHRhZ5FbfhN1KzOdzNz4" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.dotnet_api_starter: http.executor": "Run",
-    "Batch.docker_build.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.dotnet_api_starter: http.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Project.CommandLine pets.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Project.CommandLine.executor&quot;: &quot;Run&quot;,
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Batch.docker_build.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.WebAPI | #1.executor&quot;: &quot;Run&quot;,
+    &quot;OpenAPI/Swagger Code Generator.pet_store.json.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;swagger&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\matt.rothmeyer\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
-      "C:\\Users\\matt.rothmeyer\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
-      "C:\\Users\\matt.rothmeyer\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\matt.rothmeyer\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\matt.rothmeyer\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\matt.rothmeyer\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.dotnet_api_starter: http">
+}</component>
+  <component name="RunManager" selected="OpenAPI/Swagger Code Generator.pet_store.json">
     <configuration name="docker_build" type="BatchConfigurationType" factoryName="Batch" temporary="true">
       <module name="rider.module" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -64,10 +98,10 @@
       <option name="PARAMETERS" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="CommandLine" type="DotNetProject" factoryName=".NET Project">
-      <option name="EXE_PATH" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
+    <configuration name="CommandLine pets" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/CommandLine/bin/Debug/net8.0/CommandLine.exe" />
+      <option name="PROGRAM_PARAMETERS" value="pets" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CommandLine/bin/Debug/net8.0" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
@@ -77,10 +111,13 @@
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
       <option name="PROJECT_KIND" value="DotNetCore" />
-      <option name="PROJECT_TFM" value="" />
+      <option name="PROJECT_TFM" value="net8.0" />
       <method v="2">
         <option name="Build" />
       </method>
+    </configuration>
+    <configuration name="WebAPI | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/WebAPI/WebAPI.http" requestIdentifier="#1" runType="Run single request">
+      <method v="2" />
     </configuration>
     <configuration name="dotnet_api_starter: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/WebAPI/WebAPI.csproj" />
@@ -112,6 +149,29 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="pet_store.json" type="SwaggerCodegen" editBeforeRun="true" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="customTemplatesPath" value="" />
+      <option name="envs">
+        <map />
+      </option>
+      <option name="generateToPath" value="C:\workspace\personal\dotnet_starter\Services\SwaggerGen" />
+      <option name="generationParameters">
+        <list />
+      </option>
+      <option name="generatorType" value="OPENAPI_GENERATOR_V6" />
+      <option name="jdkPath" value="C:\Program Files (x86)\JetBrains\JetBrains Rider 2022.2.3\jbr\bin\java.exe" />
+      <option name="language" value="csharp-netcore" />
+      <option name="passParentEnvs" value="true" />
+      <option name="programParameters" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="specificationPath" value="C:\workspace\personal\dotnet_starter\Services\Refit\PetStore\pet_store.json" />
+      <option name="workingDirectory" value="C:\workspace\personal\dotnet_starter\Services\Refit\PetStore" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
       <deployment type="dockerfile">
         <settings />
@@ -140,8 +200,20 @@
       <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue=".NET Launch Settings Profile.dotnet_api_starter: http" />
+      <item itemvalue=".NET Launch Settings Profile.dotnet_api_starter: IIS Express" />
+      <item itemvalue=".NET Project.CommandLine" />
+      <item itemvalue=".NET Project.CommandLine pets" />
+      <item itemvalue="Batch.docker_build" />
+      <item itemvalue="Docker.dotnet_api_starter/Dockerfile" />
+      <item itemvalue="HTTP Request.WebAPI | #1" />
+      <item itemvalue="OpenAPI/Swagger Code Generator.pet_store.json" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="OpenAPI/Swagger Code Generator.pet_store.json" />
+        <item itemvalue="HTTP Request.WebAPI | #1" />
         <item itemvalue="Batch.docker_build" />
       </list>
     </recent_temporary>
@@ -160,6 +232,7 @@
       <workItem from="1710427290833" duration="3959000" />
       <workItem from="1711144612474" duration="608000" />
       <workItem from="1712780360930" duration="858000" />
+      <workItem from="1712960189960" duration="9823000" />
     </task>
     <servers />
   </component>
@@ -167,6 +240,14 @@
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

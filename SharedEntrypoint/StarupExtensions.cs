@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Services.Abstraction;
-using Services.Refit;
+using Services.Refitter;
 
 namespace SharedEntrypoint;
 
@@ -10,7 +10,7 @@ public static class StartupExtensions
     {
         return services.RegisterScopedServices()
             .RegisterTransientServices()
-            .ConfigureRefitClients(new Uri("https://petstore3.swagger.io/api/v3"));
+            .ConfigureRefitClients(new Uri("https://petstore.swagger.io/v2"));
     }
 
 

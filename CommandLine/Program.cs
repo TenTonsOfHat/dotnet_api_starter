@@ -2,7 +2,7 @@
 
 using Cocona;
 using Microsoft.Extensions.Logging;
-using Services.Refit;
+using Services.Refitter;
 using Services.Weather;
 using SharedEntrypoint;
 using SharedEntrypoint.Logging;
@@ -21,7 +21,7 @@ app.AddCommand("weather", (IWeatherForecastService service, ILogger<Program> log
 
 app.AddCommand("pets", async (IPetApi service, ILogger<Program> log) =>
 {
-    var pets = await service.FindPetsByTags(new []{"tag1"});
+    var pets = await service.FindPetsByTags(new[] { "tag1" });
     log.LogInformation("The pet is {Summary}!", pets.Content?.First().Name);
 });
 

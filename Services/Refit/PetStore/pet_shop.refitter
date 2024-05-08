@@ -1,7 +1,7 @@
 ﻿{
   "openApiPath": "./pet_store.json",
   "returnIApiResponse": true,
-  "namespace": "Services.Refit",
+  "namespace": "Services.Refitter",
   "naming": {
     "useOpenApiTitle": false,
     "interfaceName": "MyApiClient"
@@ -10,6 +10,7 @@
     "File_Upload": "IApiResponse",
     "File_Download": "System.Net.Http.HttpContent"
   },
+  "multipleInterfaces": "ByTag",
   "outputFolder": "./Client",
   "dependencyInjectionSettings": {
     "baseUrl": "",
